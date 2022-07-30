@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Researcher in Bayesian Optimization at <a href='https://www2.helsinki.fi/en/researchgroups/machine-and-human-intelligence'>Machine and Human Intelligence Lab</a>.<br>Currently contributing to <a href='https://papers.nips.cc/paper/2017/hash/df0aab058ce179e4f7ab135ed4e641a9-Abstract.html'>BADS</a>.
+subtitle: Researcher in Bayesian Optimization at <a href='https://www2.helsinki.fi/en/researchgroups/machine-and-human-intelligence'>Machine and Human Intelligence Lab</a>.<br>Currently contributing to <a href='https://papers.nips.cc/paper/2017/hash/df0aab058ce179e4f7ab135ed4e641a9-Abstract.html'>BADS</a>.<br><strong>[Currently looking for a PhD]</strong>.
 
 profile:
   align: right
@@ -22,5 +22,14 @@ I am a student of a Master’s degree in *[Data science](https://datascience.mat
 
 I am currently working on my master's thesis within the *[Machine and Human Intelligence](https://www2.helsinki.fi/en/researchgroups/machine-and-human-intelligence)* (Helsinki) research group on **Bayesian Optimization** problems, supervised by *[prof. Luigi Acerbi](http://luigiacerbi.com/)* (UniHe) and *[prof. Francesco Rinaldi](https://www.math.unipd.it/~rinaldi/) (UniPD co-supervisor)*. My thesis's research tries to extend the existing *[BADS (Bayesian Adaptive Direct Search)](https://papers.nips.cc/paper/2017/hash/df0aab058ce179e4f7ab135ed4e641a9-Abstract.html)* algorithm (developed by prof. Acerbi), by exploiting new approaches, based on Bayesian inference, to improve its convergence and stability towards minima points of expensive and non-smooth functions.
 
+**Research Interest**
 ---
-**[Currently looking for a PhD]**
+
+I am fascinated by probabilistic modelling and bayesian inference methods applied to Machine Learning and Deep Learning that quantify uncertainty and defines priors over the data to make sample efficient algorithm which deals with constraint limitation problem using optimized methods.
+Fields willing to work:
+
+  * Stochastic Optimization
+  * Bayesian Inference methods
+  * Probabilistic modeling
+  * Federated Learning
+  * Reinforcement Learning
