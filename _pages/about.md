@@ -25,8 +25,8 @@ I am currently working on my master's thesis within the *[Machine and Human Inte
 **Research Interest**
 ---
 
-I am fascinated by probabilistic modelling and Bayesian inference methods applied to Machine Learning problems.<br/>
-I find interesting models that quantify uncertainty and define priors over data to build sample efficient algorithms under resource constraints limitation<br/><br/>
+I am fascinated by probabilistic models and Bayesian inference methods applied to Machine Learning problems.
+My ideal contribution to the research would be like to bridge the gap between black-box and white-box models, using probabilistic models that quantify uncertainty and define priors over data to build sample efficient algorithms, under resource constraints limitation.<br/><br/>
 
 Research topics of interest:
 
