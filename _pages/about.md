@@ -18,9 +18,11 @@ social: true  # includes social icons at the bottom of the page
 **About me**
 ---
 
-I am a student of a Master’s degree in *[Data science](https://datascience.math.unipd.it/curricula/machine-learning-for-intelligent-systems/)* at the **University of Padova**, and I have been part of one year Eramsus exchange program at **Helsinki Univeristy**.
+I am a student of a Master’s degree in *[Data science](https://datascience.math.unipd.it/curricula/machine-learning-for-intelligent-systems/)* at the **University of Padova**, and I have been part of one year Eramsus exchange program at the **Univeristy of Helsinki**.
 
-I am currently working on my master's thesis within the *[Machine and Human Intelligence](https://www2.helsinki.fi/en/researchgroups/machine-and-human-intelligence)* (Helsinki) research group on **Bayesian Optimization** problems, supervised by *[prof. Luigi Acerbi](http://luigiacerbi.com/)* (UniHe) and *[prof. Francesco Rinaldi](https://www.math.unipd.it/~rinaldi/) (UniPD co-supervisor)*. My thesis's research tries to extend the existing *[BADS (Bayesian Adaptive Direct Search)](https://papers.nips.cc/paper/2017/hash/df0aab058ce179e4f7ab135ed4e641a9-Abstract.html)* algorithm (developed by prof. Acerbi), by exploiting new approaches, based on Bayesian inference, to improve its convergence and stability towards minima points of expensive and non-smooth functions. 
+I am currently working on my master's thesis within the *[Machine and Human Intelligence](https://www2.helsinki.fi/en/researchgroups/machine-and-human-intelligence)* (Helsinki) research group on **Bayesian Optimization**, supervised by *[prof. Luigi Acerbi](http://luigiacerbi.com/)* (UniHe) and *[prof. Francesco Rinaldi](https://www.math.unipd.it/~rinaldi/) (UniPD co-supervisor)*. My research aims to extend the existing *[BADS (Bayesian Adaptive Direct Search)](https://papers.nips.cc/paper/2017/hash/df0aab058ce179e4f7ab135ed4e641a9-Abstract.html)* algorithm (developed by prof. Acerbi), by exploiting approaches based on Adaptive Direct Search methods, Gaussian Process (GP), and Bayesian inference
+methods.The main goal is to improve its convergence towards the minima point of expensive, stochastic and non-smooth
+functions and increase stability.
 
 **Research Interest**
 ---
@@ -33,6 +35,6 @@ Research topics of interest:
   * Stochastic Optimization
   * Bayesian Inference methods
   * Probabilistic modeling
-  * Normalizing Flows and Bayesian Machine Learning
+  * Normalizing Flows
   * Federated Learning
   * Reinforcement Learning
