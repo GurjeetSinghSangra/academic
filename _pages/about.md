@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Researcher in Bayesian Optimization at <a href='https://www2.helsinki.fi/en/researchgroups/machine-and-human-intelligence'>Machine and Human Intelligence Lab</a>.<br>Currently contributing to <a href='https://papers.nips.cc/paper/2017/hash/df0aab058ce179e4f7ab135ed4e641a9-Abstract.html'>BADS</a>.<br><strong>[Looking for a PhD]</strong>.
+subtitle: Researcher in Bayesian Optimization at <a href='https://www2.helsinki.fi/en/researchgroups/machine-and-human-intelligence'>Machine and Human Intelligence Lab</a>.<br>Currently contributing to <a href='https://papers.nips.cc/paper/2017/hash/df0aab058ce179e4f7ab135ed4e641a9-Abstract.html'>BADS</a>.
 
 profile:
   align: right
