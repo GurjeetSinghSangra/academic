@@ -8,7 +8,7 @@ profile:
   align: right
   image: ../img/prof_pic_120dpi.png
   address: >
-    <p>Helsinki, Finland</p>
+    <p>Geneva, Switzerland</p>
 
 news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -32,9 +32,8 @@ My ideal contribution to the research would be like to bridge the gap between bl
 
 Research topics of interest:
 
+  * [Probabilistic Numeric](https://www.probabilistic-numerics.org/)
   * Stochastic Optimization
   * Bayesian Inference methods
-  * Probabilistic modeling
-  * Normalizing Flows
-  * Federated Learning
+  * Machine Learning and Deep Learning
   * Reinforcement Learning

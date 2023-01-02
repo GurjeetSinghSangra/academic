@@ -1,10 +1,11 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
-description: Coming soon...
+title: Publications
+description:
 years: 
 nav: true
 ---
-**Coming soon...**
+
+ **Coming soon...**
 
