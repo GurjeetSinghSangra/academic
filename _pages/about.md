@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Ph.D candidate at the University of Geneva (Switzerland).
+subtitle: <h5><b>Ph.D</b> candidate at the <b>University of Geneva</b> (Switzerland)</h5>.
 
 profile:
   align: right
