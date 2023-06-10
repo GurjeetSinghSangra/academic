@@ -3,10 +3,10 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Gurjeet
+first_name: Gurjeet Sangra
 middle_name: 
 last_name: Singh
-email: gurjeet.singh.sangra@gmail.com
+email: gurjeet.singh@etu.unige.ch
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.

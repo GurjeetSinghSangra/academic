@@ -26,7 +26,7 @@ Previously during my Master's degree in [Data science](https://datascience.math.
 ---
 
 I am fascinated by Probabilistic/Generative models and Bayesian inference methods.<br>
-My ideal contribution to the research would be like to bridge the gap between black-box and white-box models, by using probabilistic models and uncertainty quantification methods to build sample efficient algorithms, under resource constraints limitation.<br/><br/>
+My ideal contribution to the research would be like to bridge the gap between black-box and white-box models, by using probabilistic models and uncertainty quantification methods to build robust sample efficient algorithms, under resource constraints limitation.<br/><br/>
 
 Research topics of interest:
 
