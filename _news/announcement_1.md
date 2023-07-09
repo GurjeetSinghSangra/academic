@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2023-06-11 09:00:00-000
 inline: true
 ---
 
-A simple inline announcement.
+[PyBADS: Fast and robust black-box optimization in Python](https://arxiv.org/abs/2306.15576)

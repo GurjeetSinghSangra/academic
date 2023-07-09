@@ -35,3 +35,6 @@ Research topics of interest:
   * Bayesian Inference methods
   * Machine Learning and Deep Learning
   * Reinforcement Learning
+
+<!---**News and Pubblications**
+<>--- -->
