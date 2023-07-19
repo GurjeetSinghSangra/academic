@@ -10,8 +10,8 @@ profile:
   address: >
     <p>Geneva, Switzerland</p>
 
-news: false  # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
+news: true  # includes a list of news items
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
@@ -26,15 +26,12 @@ Previously during my Master's degree in [Data science](https://datascience.math.
 ---
 
 I am fascinated by Probabilistic/Generative models and Bayesian inference methods.<br>
-My ideal contribution to the research would be like to bridge the gap between black-box and white-box models, by using probabilistic models and uncertainty quantification methods to build robust sample efficient algorithms, under resource constraints limitation.<br/><br/>
+My ideal contribution to the research would be like to bridge the gap between black-box and white-box models, by using probabilistic models and uncertainty quantification methods to build robust sample efficient algorithms, under resource constraints limitation.<br/>
 
-Research topics of interest:
+Research **topics** of interest:
 
-  * [Probabilistic Numeric](https://www.probabilistic-numerics.org/)
+  * Likelihood-free inference
   * Stochastic Optimization
-  * Bayesian Inference methods
-  * Machine Learning and Deep Learning
-  * Reinforcement Learning
-
-<!---**News and Pubblications**
-<>--- -->
+  * [Probabilistic Numeric](https://www.probabilistic-numerics.org/)
+  * Bayesian Inference techniques
+  * Deep Learning
