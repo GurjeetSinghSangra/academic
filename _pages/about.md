@@ -6,7 +6,7 @@ subtitle: <h5><b>Ph.D</b> student at the <b>University of Geneva</b> (Switzerlan
 
 profile:
   align: right
-  image: ../img/prof_pic_120dpi.png
+  image: ../img/prof_pic_120dpi.jpg
   address: >
     <p>Geneva, Switzerland</p>
 
