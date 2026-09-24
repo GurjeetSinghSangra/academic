@@ -1,0 +1,28 @@
+# Newest first. `text` supports inline HTML.
+- date: 
+  text: >- 
+    Soon releasing another work, stay tuned...
+- date: 2026-08
+  text: >-
+    <strong>Climate Physics Dynamic Matching</strong> accepted at the ECCV 2026 workshop
+    on AI for Climate and Conservation. <a href="https://arxiv.org/abs/2608.26907">arXiv</a>
+- date: 2026-05
+  text: >-
+    Presented <a href="https://meetingorganizer.copernicus.org/EGU26/EGU26-2452.html"><em>Climate Grey-Box Flow Matching for Robust Climate and Weather Prediction</em></a> at the EGU General Assembly 2026 in Vienna.
+- date: 2026-01
+  text: >-
+    <strong>Variational Grey-Box Dynamics Matching</strong> accepted at AISTATS 2026.
+    <a href="https://github.com/DMML-Geneva/VGB-DM">Code</a>
+- date: 2025-10
+  text: >-
+    MIGRATE workshop <a href="https://www.unige.ch/sciences/terre/en/groups/crustal-deformation-and-fluid-flow/snf-project"><em>Computational Earth</em></a>
+    (Elba Island, 12–17 Oct), giving a talk on automating dispersion-curve picking for nodal ambient-noise tomography.
+- date: 2025-04
+  text: >-
+    Presented <em>Deep Grey-Box Meets Optimal Transport</em> at the ICLR 2025 XAI4Science workshop.
+- date: 2024-02
+  text: >-
+    PyBADS published in the <a href="https://doi.org/10.21105/joss.05694">Journal of Open Source Software</a>.
+- date: 2023-06
+  text: >-
+    PyBADS 1.0 released on <a href="https://pypi.org/project/pybads/">PyPI</a>.

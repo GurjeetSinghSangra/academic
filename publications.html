@@ -1,0 +1,28 @@
+---
+layout: page
+title: Publications
+eyebrow: Papers, workshops & software
+lede: Grey-box generative models, flow matching for dynamical systems, and their application to weather and climate.
+permalink: /publications/
+---
+<p class="note">Full list on <a href="{{ site.social.scholar }}">Google Scholar</a>.</p>
+
+<section class="year-group">
+  <h2 class="year">Selected works</h2>
+  <div class="pubs">
+    {% assign selected = site.data.publications | where_exp: "p", "p.selected" | sort: "selected" %}
+    {% for p in selected %}{% include publication.html pub=p %}{% endfor %}
+  </div>
+</section>
+
+<section class="year-group">
+  <h2 class="year">Other publications</h2>
+  {% assign others = site.data.publications | where_exp: "p", "p.selected == nil" | sort: "year" | reverse %}
+  {% assign by_year = others | group_by: "year" %}
+  {% for group in by_year %}
+  <h3 class="subyear">{{ group.name }}</h3>
+  <div class="pubs">
+    {% for p in group.items %}{% include publication.html pub=p %}{% endfor %}
+  </div>
+  {% endfor %}
+</section>

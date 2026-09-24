@@ -1,0 +1,62 @@
+---
+layout: page
+title: Projects
+eyebrow: Funding, software & past work
+lede: The research project funding my PhD, open-source software, and earlier explorations.
+permalink: /projects/
+---
+<section id="migrate" class="project project-feature">
+  <p class="eyebrow">Funding project</p>
+  <h2>MIGRATE</h2>
+  <p class="project-sub">Multidisciplinary and InteGRated Approach for geoThermal Exploration</p>
+  <p>
+    Geothermal energy is a renewable and stable alternative to fossil fuels, but its development is held back by
+    poor knowledge of the subsurface, which makes exploration geologically and economically risky.
+    MIGRATE brings together seismology (ambient-noise surface-wave tomography, dispersion-curve analysis) and
+    machine learning to build automated, reproducible and high-resolution tools for exploring the Earth's upper crust
+    from dense nodal networks.
+  </p>
+  <h3>My role</h3>
+  <ul class="checks">
+    <li><strong>Simulation-based inference under model misspecification</strong> — amortised inversion of surface-wave dispersion curves into crustal velocity models, robust to mismatch between the simulator and real data.</li>
+    <li><strong>Segmentation for dispersion-curve picking</strong> — deep segmentation models that help seismologists pick dispersion curves automatically and reproducibly.</li>
+    <li><strong>Outreach</strong> — co-organised the workshop <a href="https://www.unige.ch/sciences/terre/en/groups/crustal-deformation-and-fluid-flow/snf-project"><em>Computational Earth: Integrating geology, seismic tomography and machine learning</em></a> (Elba Island, Oct 2025), where I gave a talk on the challenges of nodal ambient-noise tomography and automating curve picking as a segmentation problem.</li>
+  </ul>
+  <p class="pub-links">
+    <a class="chip" href="{{ site.social.huggingface }}">MIGRATE on Hugging Face</a>
+  </p>
+</section>
+
+<section class="project">
+  <p class="eyebrow">Software</p>
+  <h2>PyBADS</h2>
+  <p>
+    A Python implementation of Bayesian Adaptive Direct Search, for fast and robust black-box optimization of
+    rough, noisy and mildly expensive objectives — typical of model fitting. Developed during my MSc thesis with
+    Luigi Acerbi at the University of Helsinki, including a study of convergence to stationary points of
+    non-smooth stochastic functions.
+  </p>
+  <p class="pub-links">
+    <a class="chip chip-code" href="https://github.com/acerbilab/pybads">GitHub</a>
+    <a class="chip" href="https://pypi.org/project/pybads/">PyPI</a>
+    <a class="chip" href="https://doi.org/10.21105/joss.05694">JOSS paper</a>
+    <a class="chip" href="https://thesis.unipd.it/handle/20.500.12608/42162">MSc thesis</a>
+  </p>
+</section>
+
+<section class="project">
+  <p class="eyebrow">Research code</p>
+  <h2>VGB-DM</h2>
+  <p>Official implementation of <em>Variational Grey-Box Dynamics Matching</em> (AISTATS 2026).</p>
+  <p class="pub-links"><a class="chip chip-code" href="https://github.com/DMML-Geneva/VGB-DM">GitHub</a></p>
+</section>
+
+<section class="project">
+  <p class="eyebrow">Earlier work</p>
+  <h2>Student projects</h2>
+  <ul class="plain">
+    <li><a href="https://github.com/GurjeetSinghSangra/dzofw-adversarial-attack">Universal adversarial perturbations with Frank–Wolfe</a></li>
+    <li><a href="https://github.com/GurjeetSinghSangra/rl-benchmarking-reliability">Benchmarking and reliability in reinforcement learning</a></li>
+    <li><a href="https://github.com/GurjeetSinghSangra/rbm-dbn-emnist">Deep belief networks on EMNIST</a></li>
+  </ul>
+</section>

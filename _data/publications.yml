@@ -1,0 +1,154 @@
+# Publications, newest first.
+# `me` in authors is highlighted; `selected: <rank>` lists the paper under Selected works
+# (home page and publications page), ordered by rank.
+# Supported link keys: arxiv, pdf, openreview, code, doi, abstract_page, pypi
+
+- key: singh2026climphydm
+  title: Climate Physics Dynamic Matching
+  authors: [me, Frantzeska Lavda, Alexandros Kalousis]
+  venue: ECCV 2026 Workshop on AI for Climate and Conservation (AICC)
+  venue_short: ECCV-W 2026
+  year: 2026
+  type: workshop
+  selected: 2
+  tags: [weather & climate, flow matching, grey-box]
+  links:
+    arxiv: https://arxiv.org/abs/2608.26907
+    pdf: https://arxiv.org/pdf/2608.26907
+  abstract: >-
+    Deep generative models such as flow matching and diffusion models have shown
+    potential for learning complex dynamical systems, but typically act as black
+    boxes that neglect underlying physical structure, while physics-based models
+    governed by partial differential equations are often incomplete due to
+    missing source terms, or uncertain parametrisations. We present Climate
+    Physics Dynamic Matching (ClimPhyDM), a variational simulation-free dynamics
+    informed framework for weather forecasting that combines an advection-type
+    physics prior with data-driven components in a variational framework. On the
+    ERA5 benchmark at hourly (42-hour) and monthly (5-month) resolutions,
+    ClimPhyDM outperforms ClimODE, and GB-DM, keeping the lower error at extended
+    horizon, indicating improved temporal stability and resistance to error
+    accumulation, while its simulation-free paradigm also enables training on a
+    single modest 12 GB consumer GPU.
+  bibtex: |-
+    @inproceedings{singh2026climphydm,
+      title={Climate Physics Dynamic Matching},
+      author={Singh, Gurjeet Sangra and Lavda, Frantzeska and Kalousis, Alexandros},
+      booktitle={ECCV Workshop on AI for Climate and Conservation (AICC) 2026},
+      year={2026}
+    }
+
+- key: singh2026variational
+  title: Variational Grey-Box Dynamics Matching
+  authors: [me, Frantzeska Lavda, Giangiacomo Mercatali, Alexandros Kalousis]
+  venue: The 29th International Conference on Artificial Intelligence and Statistics (AISTATS 2026)
+  venue_short: AISTATS 2026
+  year: 2026
+  type: conference
+  selected: 1
+  tags: [flow matching, grey-box, dynamical systems]
+  links:
+    arxiv: https://arxiv.org/abs/2602.17477
+    openreview: https://openreview.net/forum?id=NMuUPLBc84
+    code: https://github.com/DMML-Geneva/VGB-DM
+  abstract: >-
+    Deep generative models such as flow matching and diffusion models have shown
+    great potential in learning complex distributions and dynamical systems, but
+    often act as black-boxes, neglecting underlying physics. In contrast,
+    physics-based simulation models described by ODEs/PDEs remain
+    interpretable, but may have missing or unknown terms, unable to fully
+    describe real-world observations. We bridge this gap with a novel grey-box
+    method that integrates incomplete physics models directly into generative
+    models. Our approach learns dynamics from observational trajectories alone,
+    without ground-truth physics parameters, in a simulation-free manner that
+    avoids scalability and stability issues of Neural ODEs. The core of our
+    method lies in modelling a structured variational distribution within the
+    flow matching framework, by using two latent encodings: one to model the
+    missing stochasticity and multi-modal velocity, and a second to encode
+    physics parameters as a latent variable with a physics-informed prior.
+    Furthermore, we present an adaptation of the framework to handle
+    second-order dynamics. Our experiments on representative ODE/PDE problems
+    and real-world weather forecasting demonstrate that our method performs on
+    par with or superior to fully data-driven approaches and previous grey-box
+    baselines, while preserving the interpretability of the physics model.
+  bibtex: |-
+    @inproceedings{singh2026variational,
+      title={Variational Grey-Box Dynamics Matching},
+      author={Singh, Gurjeet Sangra and Lavda, Frantzeska and Mercatali, Giangiacomo and Kalousis, Alexandros},
+      booktitle={The 29th International Conference on Artificial Intelligence and Statistics},
+      year={2026}
+    }
+
+
+- key: singh2025hybrid
+  title: "Hybrid Generative Modeling for Incomplete Physics: Deep Grey-Box Meets Optimal Transport"
+  authors: [me, Maciej Falkiewicz, Alexandros Kalousis]
+  venue: "ICLR 2025 Workshop XAI4Science: From Understanding Model Behavior to Discovering New Scientific Knowledge"
+  venue_short: ICLR-W 2025
+  year: 2025
+  type: workshop
+  tags: [optimal transport, grey-box, generative models]
+  links:
+    arxiv: https://arxiv.org/abs/2506.22204
+    openreview: https://openreview.net/forum?id=nnCEkZaF0G
+  abstract: >-
+    Physics phenomena are often described by ordinary and/or partial
+    differential equations (ODEs/PDEs), and solved analytically or numerically.
+    Unfortunately, many real-world systems are described only approximately with
+    missing or unknown terms in the equations. This makes the distribution of
+    the physics model differ from the true data-generating process (DGP). Using
+    limited and unpaired data between DGP observations and the imperfect model
+    simulations, we investigate this particular setting by completing the
+    known-physics model, combining theory-driven models and data-driven to
+    describe the shifted distribution involved in the DGP. We present a novel
+    hybrid generative model approach combining deep grey-box modelling with
+    Optimal Transport (OT) methods to enhance incomplete physics models. Our
+    method implements OT maps in data space while maintaining minimal source
+    distribution distortion, demonstrating superior performance in resolving the
+    unpaired problem and ensuring correct usage of physics parameters. Unlike
+    black-box alternatives, our approach leverages physics-based inductive
+    biases to accurately learn system dynamics while preserving
+    interpretability through its domain knowledge foundation. Experimental
+    results validate our method's effectiveness in both generation tasks and
+    model transparency, offering detailed insights into learned physics
+    dynamics.
+  bibtex: |-
+    @inproceedings{singh2025hybrid,
+      title={Hybrid Generative Modeling for Incomplete Physics: Deep Grey-Box Meets Optimal Transport},
+      author={Singh, Gurjeet Sangra and Falkiewicz, Maciej and Kalousis, Alexandros},
+      booktitle={ICLR 2025 Workshop: XAI4Science: From Understanding Model Behavior to Discovering New Scientific Knowledge},
+      year={2025}
+    }
+
+- key: singh2024pybads
+  title: "PyBADS: Fast and robust black-box optimization in Python"
+  authors: [me, Luigi Acerbi]
+  venue: Journal of Open Source Software, 9(94), 5694
+  venue_short: JOSS 2024
+  year: 2024
+  type: journal
+  selected: 3
+  tags: [bayesian optimization, software]
+  links:
+    doi: https://doi.org/10.21105/joss.05694
+    arxiv: https://arxiv.org/abs/2306.15576
+    code: https://github.com/acerbilab/pybads
+    pypi: https://pypi.org/project/pybads/
+  abstract: >-
+    PyBADS is a Python implementation of the Bayesian Adaptive Direct Search
+    (BADS) algorithm for fast and robust black-box optimization. BADS targets
+    difficult optimization problems where the objective function is rough
+    (non-convex, non-smooth), mildly expensive, possibly noisy, and gradient
+    information is unavailable — as is typical in model fitting. PyBADS is fast
+    in wall-clock time and sample-efficient, with support for noisy targets,
+    and requires no specific tuning.
+  bibtex: |-
+    @article{singh2024pybads,
+      title={{PyBADS}: Fast and robust black-box optimization in {P}ython},
+      author={Singh, Gurjeet Sangra and Acerbi, Luigi},
+      journal={Journal of Open Source Software},
+      volume={9},
+      number={94},
+      pages={5694},
+      year={2024},
+      doi={10.21105/joss.05694}
+    }

@@ -1,0 +1,42 @@
+{%- assign p = include.pub -%}
+<article class="pub" id="{{ p.key }}">
+  <div class="pub-meta">
+    <span class="venue venue-{{ p.type }}">{{ p.venue_short }}</span>
+  </div>
+  <div class="pub-body">
+    <h3 class="pub-title">{{ p.title }}</h3>
+    <p class="pub-authors">
+      {%- for a in p.authors -%}
+        {%- if a == "me" -%}<strong class="me">{{ site.author.name }}</strong>{%- else -%}{{ a }}{%- endif -%}
+        {%- unless forloop.last -%}, {% endunless -%}
+      {%- endfor -%}
+    </p>
+    <p class="pub-venue">{{ p.venue }}</p>
+    <div class="pub-links">
+      {%- if p.links.arxiv %}<a class="chip" href="{{ p.links.arxiv }}">arXiv</a>{% endif -%}
+      {%- if p.links.pdf %}<a class="chip" href="{{ p.links.pdf }}">PDF</a>{% endif -%}
+      {%- if p.links.openreview %}<a class="chip" href="{{ p.links.openreview }}">OpenReview</a>{% endif -%}
+      {%- if p.links.doi %}<a class="chip" href="{{ p.links.doi }}">DOI</a>{% endif -%}
+      {%- if p.links.abstract_page %}<a class="chip" href="{{ p.links.abstract_page }}">Abstract</a>{% endif -%}
+      {%- if p.links.code %}<a class="chip chip-code" href="{{ p.links.code }}">Code</a>{% endif -%}
+      {%- if p.links.pypi %}<a class="chip" href="{{ p.links.pypi }}">PyPI</a>{% endif -%}
+    </div>
+    {%- unless include.compact %}
+    {%- if p.abstract %}
+    <details class="pub-more">
+      <summary>Abstract</summary>
+      <p>{{ p.abstract }}</p>
+    </details>
+    {%- endif %}
+    {%- if p.bibtex %}
+    <details class="pub-more">
+      <summary>BibTeX</summary>
+      <div class="bibtex">
+        <button class="copy" type="button">Copy</button>
+        <pre><code>{{ p.bibtex | xml_escape }}</code></pre>
+      </div>
+    </details>
+    {%- endif %}
+    {%- endunless %}
+  </div>
+</article>
