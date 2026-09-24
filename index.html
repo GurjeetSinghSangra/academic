@@ -1,0 +1,119 @@
+---
+layout: default
+slug: home
+---
+<section class="hero">
+  <canvas class="flow" aria-hidden="true"></canvas>
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">PhD candidate · Machine Learning · University of Geneva</p>
+      <h1>Gurjeet <span class="accent">Sangra</span> Singh</h1>
+      <p class="hero-lede">
+        I build generative models that keep the <em>physics</em> in the loop —
+        learning dynamical systems from data, completing imperfect simulators,
+        and inferring what we cannot observe directly.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="{{ '/publications/' | relative_url }}">Publications {% include icon.html name="arrow" %}</a>
+        <a class="btn btn-ghost" href="mailto:{{ site.author.email }}">Get in touch</a>
+      </div>
+      {% include social.html %}
+    </div>
+    <figure class="portrait">
+      <picture>
+        <source srcset="{{ '/assets/img/profile.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/img/profile.jpg' | relative_url }}" width="720" height="638" alt="Portrait of Gurjeet Sangra Singh">
+      </picture>
+      <figcaption>
+        <span>ẋ = f<sub>θ</sub>(x) + g<sub>φ</sub>(x, z)</span>
+        <span class="muted">known physics + learned residual</span>
+      </figcaption>
+    </figure>
+  </div>
+  <p class="flow-caption wrap" aria-hidden="true">background · particles advected by a time-periodic double-gyre flow</p>
+</section>
+
+<section id="about" class="section wrap">
+  <div class="section-label"><span>01</span> About</div>
+  <div class="prose">
+    <p>
+      I am a PhD candidate in the <a href="{{ site.author.group_url }}">Data Mining and Machine Learning (DMML)</a>
+      group at the University of Geneva, supervised by
+      <a href="http://dmml.ch/alexandros-kalousis/">Prof. Alexandros Kalousis</a> and
+      <a href="https://vision.unige.ch/stephanemarchandmaillet">Prof. Stéphane Marchand-Maillet</a>.
+    </p>
+    <p>
+      My work sits between <strong>dynamical systems</strong>, <strong>conditional generative models</strong>
+      and <strong>simulation-based (amortised) inference</strong> for inverse problems.
+      Recently I have been applying these ideas to <strong>weather and climate modelling</strong>.
+      I am also a data scientist: turning raw data into meaningful, structured information that supports decisions.
+    </p>
+    <p>
+      My PhD is funded by <a href="{{ '/projects/#migrate' | relative_url }}">MIGRATE</a>, a geothermal-exploration project
+      bridging seismology and machine learning. Before Geneva, I did my MSc in
+      <a href="https://datascience.math.unipd.it/">Data Science</a> between the University of Padova and the
+      University of Helsinki, where I wrote my thesis with
+      <a href="https://www.helsinki.fi/en/researchgroups/machine-and-human-intelligence">Luigi Acerbi</a>
+      and developed <a href="https://github.com/acerbilab/pybads">PyBADS</a>.
+    </p>
+  </div>
+</section>
+
+<section id="research" class="section wrap">
+  <div class="section-label"><span>02</span> Research</div>
+  <div class="cards">
+    <article class="card">
+      <svg class="card-art" viewBox="0 0 120 60" preserveAspectRatio="xMinYMid meet" aria-hidden="true"><path d="M4 44C24 4 40 56 60 30s36-22 56-8" /><path class="dim" d="M4 50C24 16 40 60 60 38s36-18 56-6" /></svg>
+      <h3>Grey-box dynamical systems</h3>
+      <p>Hybrid models that combine incomplete ODE/PDE physics with neural components, staying interpretable while matching real observations.</p>
+    </article>
+    <article class="card">
+      <svg class="card-art" viewBox="0 0 120 60" preserveAspectRatio="xMinYMid meet" aria-hidden="true"><circle cx="14" cy="30" r="4"/><circle cx="106" cy="14" r="4"/><circle cx="106" cy="46" r="4"/><path d="M18 30C50 30 70 14 102 14M18 30c32 0 52 16 84 16"/></svg>
+      <h3>Conditional generative models</h3>
+      <p>Flow matching and diffusion models as simulation-free learners of stochastic, multi-modal dynamics.</p>
+    </article>
+    <article class="card">
+      <svg class="card-art" viewBox="0 0 120 60" preserveAspectRatio="xMinYMid meet" aria-hidden="true"><path d="M6 52C30 52 40 8 60 8s30 44 54 44"/><path class="dim" d="M60 8v44M40 52h40"/></svg>
+      <h3>Simulation-based inference</h3>
+      <p>Amortised posterior estimation for inverse problems — including inference under model misspecification.</p>
+    </article>
+    <article class="card">
+      <svg class="card-art" viewBox="0 0 120 60" preserveAspectRatio="xMinYMid meet" aria-hidden="true"><path d="M4 20c16-8 24 8 40 0s24-8 40 0 24 8 32 0"/><path class="dim" d="M4 36c16-8 24 8 40 0s24-8 40 0 24 8 32 0"/><path d="M4 52c16-8 24 8 40 0s24-8 40 0 24 8 32 0"/></svg>
+      <h3>Weather &amp; climate</h3>
+      <p>Physics-informed flow matching for stable, long-horizon forecasting on ERA5.</p>
+    </article>
+  </div>
+</section>
+
+<section id="news" class="section wrap">
+  <div class="section-label"><span>03</span> News</div>
+  <ol class="timeline">
+    {% for item in site.data.news %}
+    <li>
+      <time datetime="{{ item.date }}">{{ item.date | append: '-01' | date: '%b %Y' }}</time>
+      <p>{{ item.text }}</p>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section id="selected" class="section wrap">
+  <div class="section-label"><span>04</span> Selected publications</div>
+  <div class="pubs">
+    {% assign selected = site.data.publications | where_exp: "p", "p.selected" | sort: "selected" %}
+    {% for p in selected %}{% include publication.html pub=p compact=true %}{% endfor %}
+  </div>
+  <a class="more" href="{{ '/publications/' | relative_url }}">All publications, abstracts &amp; BibTeX {% include icon.html name="arrow" %}</a>
+</section>
+
+<section id="migrate" class="section wrap">
+  <div class="section-label"><span>05</span> Funding</div>
+  <a class="banner" href="{{ '/projects/#migrate' | relative_url }}">
+    <div>
+      <p class="eyebrow">Project</p>
+      <h3>MIGRATE — Multidisciplinary and InteGRated Approach for geoThermal Exploration</h3>
+      <p>Machine learning for passive seismic exploration of the Earth's upper crust, towards lower-risk geothermal energy.</p>
+    </div>
+    {% include icon.html name="arrow" %}
+  </a>
+</section>
