@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://gurjeetsinghsangra.github.io/academic/sitemap.xml
